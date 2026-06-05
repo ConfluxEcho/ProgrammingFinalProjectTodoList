@@ -4,6 +4,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="TodoList.MainWindow"
-        Title="TodoList">
-    Welcome to Avalonia!
+        Title="Todolist"
+        WindowState="FullScreen">
+    
+    <Grid RowDefinitions="Auto, *" Background="{DynamicResource ThemePrimary}">
+        
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Vítáme vás v úkolníčku"
+                       FontWeight="Bold"
+                       FontSize="60"
+                       HorizontalAlignment="Center"
+                       MaxWidth="1150"
+                       Margin="60"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Spacing="40"> <Button FontSize="50"
+                                          Content="O nás"
+                                          HorizontalContentAlignment="Center"
+                                          Padding="20"
+                                          Width="400"
+                                          Background="BurlyWood"
+                                          Click="B_AboutWindow"/>
+            
+            <Button FontSize="50"
+                    Content="Historie aktivit"
+                    Width="400"
+                    HorizontalContentAlignment="Center"
+                    Padding="20"
+                    Background="BurlyWood"
+                    Click="B_ActivityHistory"/>
+            
+            <Button FontSize="50"
+                    Content="Úkolníček"
+                    Width="400"
+                    HorizontalContentAlignment="Center"
+                    Padding="20"
+                    Background="BurlyWood"
+                    Click="B_HomeWindow"/>
+            
+        </StackPanel>
+        
+    </Grid>
+    
 </Window>

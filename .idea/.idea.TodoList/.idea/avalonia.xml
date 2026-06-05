@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="TodoList/App.axaml" value="TodoList/TodoList.csproj" />
+        <entry key="TodoList/MainWindow.axaml" value="TodoList/TodoList.csproj" />
+        <entry key="TodoList/Views/AboutView.axaml" value="TodoList/TodoList.csproj" />
+        <entry key="TodoList/Views/AddView.axaml" value="TodoList/TodoList.csproj" />
+        <entry key="TodoList/Views/HomeWindow.axaml" value="TodoList/TodoList.csproj" />
+        <entry key="TodoList/Views/MainWindow.axaml" value="TodoList/TodoList.csproj" />
+        <entry key="TodoList/Views/ViewWindow.axaml" value="TodoList/TodoList.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

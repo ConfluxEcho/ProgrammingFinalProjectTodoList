@@ -2,7 +2,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="TodoList.App"
              RequestedThemeVariant="Default">
-             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+    
+    <Application.Resources>
+        <SolidColorBrush x:Key="ThemePrimary">#DEB887</SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeBackground">#ffffff</SolidColorBrush>
+        <SolidColorBrush x:Key="ThemeForeground">#000000</SolidColorBrush>
+    </Application.Resources>
 
     <Application.Styles>
         <FluentTheme />

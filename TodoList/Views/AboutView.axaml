@@ -1,0 +1,65 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TodoList.AboutWindow">
+    
+    <Grid RowDefinitions="*, *" Background="{DynamicResource ThemePrimary}">
+        
+        <StackPanel>
+            <TextBlock FontSize="50"
+                       HorizontalAlignment="Center"
+                       MaxWidth="1600"
+                       Margin="60"
+                       TextWrapping="Wrap">
+                Tento projekt má představovat aplikaci, kde si uživatel může zadat jisté úkoly s prioritou, datem 
+                dokončení a barevným štítkem. Může úkoly označit jako dokončené a filtrovat seznam úkolů podle dokončení.
+                Úkoly lze zároveň mazat či zobrazit jejich detaily. Níže si lze změnit motiv aplikace.
+            </TextBlock>
+            
+            <StackPanel Orientation="Horizontal" Height="200">
+                <TextBlock FontSize="50" HorizontalAlignment="Left" Margin="10" Text="Motiv: "/>
+                
+                <Button Width="400" Margin="10" Background="#84D2F6" Content="Motiv 1" FontSize="50"
+                        Click="OnThemeToggleButtonClick" x:Name="M1" VerticalAlignment="Stretch"/>
+                
+                <Button Width="400" Margin="10" Background="#84D2F6" Content="Motiv 2" FontSize="50"
+                        Click="OnThemeToggleButtonClick" x:Name="M2" VerticalAlignment="Stretch"/>
+            </StackPanel>
+        </StackPanel>
+            
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="250,250,0,70">
+                    
+                    <Button FontSize="50"
+                            Content="Úvodní stránka"
+                            HorizontalContentAlignment="Center"
+                            Margin="10"
+                            Padding="20"
+                            Width="400"
+                            Background="BurlyWood"
+                            Click="B_MainWindow"/>
+                    
+                </StackPanel>
+                
+                <StackPanel HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            Margin="0,250,250,70">
+                    
+                    <Button FontSize="50"
+                            Content="Úkolníček"
+                            Width="400"
+                            HorizontalContentAlignment="Center"
+                            Padding="20"
+                            Margin="10"
+                            Background="BurlyWood"
+                            Click="B_HomeWindow"/>
+                    
+                </StackPanel>
+        </StackPanel>
+        </Grid>
+    
+</UserControl>

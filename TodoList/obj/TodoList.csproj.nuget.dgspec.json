@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Andrij\\Skola\\JetRiderProjects\\Zkouska2\\ProgrammingFinalProjectTodoList\\TodoList\\TodoList.csproj": {}
+    "/Users/damianslezak/RiderProjects/TodoList/TodoList/TodoList.csproj": {}
   },
   "projects": {
-    "E:\\Andrij\\Skola\\JetRiderProjects\\Zkouska2\\ProgrammingFinalProjectTodoList\\TodoList\\TodoList.csproj": {
+    "/Users/damianslezak/RiderProjects/TodoList/TodoList/TodoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Andrij\\Skola\\JetRiderProjects\\Zkouska2\\ProgrammingFinalProjectTodoList\\TodoList\\TodoList.csproj",
+        "projectUniqueName": "/Users/damianslezak/RiderProjects/TodoList/TodoList/TodoList.csproj",
         "projectName": "TodoList",
-        "projectPath": "E:\\Andrij\\Skola\\JetRiderProjects\\Zkouska2\\ProgrammingFinalProjectTodoList\\TodoList\\TodoList.csproj",
-        "packagesPath": "C:\\Users\\andri\\.nuget\\packages\\",
-        "outputPath": "E:\\Andrij\\Skola\\JetRiderProjects\\Zkouska2\\ProgrammingFinalProjectTodoList\\TodoList\\obj\\",
+        "projectPath": "/Users/damianslezak/RiderProjects/TodoList/TodoList/TodoList.csproj",
+        "packagesPath": "/Users/damianslezak/.nuget/packages/",
+        "outputPath": "/Users/damianslezak/RiderProjects/TodoList/TodoList/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\andri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/damianslezak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.300"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -76,30 +75,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.27, 8.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/damianslezak/.dotnet/sdk/8.0.421/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

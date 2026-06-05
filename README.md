@@ -6,5 +6,3 @@ Tento projekt se soustředí na vytváření účinného a produktivního progra
 Damián
 ### Frontend:
 Andrij
-### Emoční podpora:
-Lacosinus

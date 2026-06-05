@@ -1,0 +1,99 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TodoList.AddView">
+    
+    <Grid>
+        
+        <StackPanel Background="{DynamicResource ThemePrimary}" Orientation="Vertical">
+            
+            <StackPanel Margin="20"
+                        Background="AntiqueWhite"
+                        Orientation="Horizontal">
+            
+                <TextBlock FontSize="50"
+                           HorizontalAlignment="Left"
+                           MaxWidth="1600"
+                           Margin="10"
+                           TextWrapping="Wrap">
+                    Priorita
+                </TextBlock>
+                
+                <TextBox Watermark="0-10"
+                         BorderThickness="3"
+                         Margin="10"
+                         FontSize="40"
+                         Foreground="White"
+                         x:Name="PriorityTextBox"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Top"/>
+                
+            </StackPanel>
+            
+            <StackPanel Margin="20"
+                        Background="AntiqueWhite"
+                        Orientation="Horizontal">
+        
+                <TextBlock FontSize="50"
+                           HorizontalAlignment="Left"
+                           MaxWidth="1600"
+                           Margin="10"
+                           TextWrapping="Wrap">
+                    Deadline
+                </TextBlock>
+            
+                <TextBox Watermark="Datum deadlinu v libovolném formátu"
+                         BorderThickness="3"
+                         Margin="10"
+                         FontSize="40"
+                         Foreground="White"
+                         x:Name="DeadlineTextBox"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Top"/>
+                
+            </StackPanel>
+            
+            <StackPanel Margin="20"
+                        Background="AntiqueWhite"
+                        Orientation="Horizontal">
+    
+                <TextBlock FontSize="50"
+                           HorizontalAlignment="Left"
+                           MaxWidth="1600"
+                           Margin="10"
+                           TextWrapping="Wrap">
+                    Barva štítku
+                </TextBlock>
+        
+                <TextBox Watermark="Red, Blue, Green, Yellow, Orange"
+                         BorderThickness="3"
+                         Margin="10"
+                         FontSize="40"
+                         Foreground="White"
+                         x:Name="ColorTextBox"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Top"/>
+            
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="250, 70">
+            
+            <Button FontSize="50"
+                    Content="Potvrdit"
+                    Width="400"
+                    HorizontalContentAlignment="Center"
+                    Padding="20"
+                    Margin="10"
+                    Background="#84D2F6"
+                    Click="SubmitDetails"/>
+            
+        </StackPanel>
+        
+        </Grid>
+    
+</UserControl>

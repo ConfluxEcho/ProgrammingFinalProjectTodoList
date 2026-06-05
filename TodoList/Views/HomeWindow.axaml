@@ -1,0 +1,84 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TodoList.HomeWindow">
+    
+    <Grid RowDefinitions="Auto, Auto, 1.2*, 0.9*" Background="{DynamicResource ThemePrimary}">
+            
+        <TextBlock Text="Úkolníček"
+                   FontWeight="Black"
+                   FontSize="60"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Center"
+                   MaxWidth="1150"
+                   Margin="30"/>
+
+        <TextBox Grid.Row="1" Watermark="Napiš název úkolu"
+                 BorderThickness="3"
+                 MaxWidth="900"
+                 Margin="15"
+                 FontSize="40"
+                 Foreground="White"
+                 x:Name="TaskTextBox"/>
+                
+        <ScrollViewer Grid.Row="2" Margin="10" Background="#6E633D">
+            <StackPanel x:Name="TaskContainer"/>
+        </ScrollViewer>
+        
+        <Grid Grid.Row="3"
+              ColumnDefinitions="*, *, *"
+              RowDefinitions="*, *">
+                
+            <Button Grid.Row="0" FontSize="45"
+                    Content="Ozn. jako hotovo"
+                    Margin="10"
+                    Padding="20"
+                    Width="400"
+                    Background="#0892A5"
+                    Click="MarkTaskAsDone"/>
+            
+            <Button Grid.Row="1" FontSize="45"
+                    Content="Zobr. detaily"
+                    Width="400"
+                    Padding="20"
+                    Margin="10"
+                    Background="#0892A5"
+                    Click="ShowDetails"/>
+            
+            <Button Grid.Column="1" FontSize="45"
+                    Content="Zobr. dokončené"
+                    Width="400"
+                    Padding="20"
+                    Margin="10"
+                    Background="#0892A5"
+                    Click="ToggleTasks"/>
+            
+            <Button Grid.Row="1" Grid.Column="1" FontSize="50"
+                    Content="Smazat"
+                    Width="400"
+                    Padding="20"
+                    Margin="10"
+                    Background="#0892A5"
+                    Click="DeleteTask"/>
+            
+            <Button Grid.Column="2" FontSize="50"
+                    Content="Jít zpět"
+                    Width="400"
+                    Padding="20"
+                    Margin="10"
+                    Background="#0892A5"
+                    Click="ReturnToMain"/>
+                
+            <Button Grid.Row="1" Grid.Column="2" FontSize="50"
+                    Content="Přidat"
+                    Width="400"
+                    Padding="20"
+                    Margin="10"
+                    Background="#0892A5"
+                    Click="AddTask"/>
+        </Grid>
+    </Grid>
+    
+</UserControl>
