@@ -6,3 +6,6 @@ Tento projekt se soustředí na vytváření účinného a produktivního progra
 Damián
 ### Frontend:
 Andrij
+
+## Poznámka pro učitele:
+Vzhledem k technickým potížím nemohl Andrij nahrávat svůj kód na Github. Vyřešili jsme to tak, že všechny změny byly poslány mně a já jsem to společně se svými změnami nahrál.
